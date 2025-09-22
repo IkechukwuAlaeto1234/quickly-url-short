@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-// The API key is assumed to be available in the execution environment as per the requirements.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Access Vite environment variable correctly
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const model = 'gemini-2.5-flash';
 
@@ -39,13 +39,11 @@ export const generateShortLinkSlug = async (longUrl: string): Promise<string> =>
         if (result && typeof result.slug === 'string' && result.slug.length > 0) {
             return result.slug;
         } else {
-            // Fallback for unexpected API response
             console.warn("Received invalid slug format from API, generating fallback.", result);
             return `link-${Date.now().toString().slice(-6)}`;
         }
     } catch (error) {
         console.error("Error generating short link slug:", error);
-        // Provide a more user-friendly error
         throw new Error("The smart generator failed to create a short link. The URL might be inaccessible or invalid.");
     }
 };
