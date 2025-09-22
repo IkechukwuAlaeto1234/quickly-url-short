@@ -1,0 +1,5 @@
+{
+  "name": "Quickly - Smart Link Shortener",
+  "description": "A modern, visually appealing link shortener that uses smart algorithms to generate memorable, human-readable short links. It features a clean UI, instant copy-to-clipboard functionality, and persists your link history in your browser.",
+  "requestFramePermissions": []
+}
