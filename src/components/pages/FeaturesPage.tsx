@@ -1,8 +1,8 @@
 import React from 'react';
-import { LinkIcon } from './icons/LinkIcon';
-import { AnalyticsIcon } from './icons/AnalyticsIcon';
-import { ShareIcon } from './icons/ShareIcon';
-import { ShieldIcon } from './icons/ShieldIcon';
+import { LinkIcon } from '../icons/LinkIcon';
+import { AnalyticsIcon } from '../icons/AnalyticsIcon';
+import { ShareIcon } from '../icons/ShareIcon';
+import { ShieldIcon } from '../icons/ShieldIcon';
 
 const features = [
   {

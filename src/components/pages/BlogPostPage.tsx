@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { BlogPost } from '../types';
-import { TwitterIcon } from './icons/TwitterIcon';
-import { LinkedInIcon } from './icons/LinkedInIcon';
-import { FacebookIcon } from './icons/FacebookIcon';
-import { CommentsSection } from './CommentsSection';
+import { BlogPost } from '../../types';
+import { TwitterIcon } from '../icons/TwitterIcon';
+import { LinkedInIcon } from '../icons/LinkedInIcon';
+import { FacebookIcon } from '../icons/FacebookIcon';
+import { CommentsSection } from '../CommentsSection';
 
 interface BlogPostPageProps {
   post: BlogPost;

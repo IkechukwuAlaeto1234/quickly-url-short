@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { URLShortenerForm } from './components/URLShortenerForm.tsx';
+import { URLShortenerForm } from './components/URLShortenerForm';
 import { LinkHistoryList } from './components/LinkHistoryList';
 import { generateShortLinkSlug } from './services/geminiService';
 import { ShortenedLink, User, BlogPost } from './types';
@@ -7,16 +7,16 @@ import { login, register, logout, getCurrentUser } from './services/authService'
 import { AuthModal } from './components/auth/AuthModal';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { LandingPage } from './components/LandingPage';
-import { BlogPage } from './components/BlogPage';
+import { LandingPage } from './components/pages/LandingPage';
+import { BlogPage } from './components/pages/BlogPage';
 import { LoadingModal } from './components/LoadingModal';
-import { AboutPage } from './components/AboutPage';
-import { ContactPage } from './components/ContactPage';
-import { BlogPostPage } from './components/BlogPostPage';
+import { AboutPage } from './components/pages/AboutPage';
+import { ContactPage } from './components/pages/ContactPage';
+import { BlogPostPage } from './components/pages/BlogPostPage';
 import { Breadcrumbs } from './components/Breadcrumbs';
-import { FeaturesPage } from './components/FeaturesPage';
-import { PricingPage } from './components/PricingPage';
-import { mockPosts } from './components/BlogPage';
+import { FeaturesPage } from './components/pages/FeaturesPage';
+import { PricingPage } from './components/pages/PricingPage';
+import { mockPosts } from './components/pages/BlogPage';
 
 export type View = 'landing' | 'dashboard' | 'blog' | 'blogPost' | 'about' | 'contact' | 'features' | 'pricing';
 

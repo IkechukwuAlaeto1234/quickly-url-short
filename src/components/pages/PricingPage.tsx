@@ -1,6 +1,6 @@
 import React from 'react';
-import { PricingSection } from './PricingSection';
-import { View } from '../App';
+import { PricingSection } from '../PricingSection';
+import { View } from '../../App';
 
 export const PricingPage: React.FC = () => {
     // A dummy function for the component since this page doesn't navigate

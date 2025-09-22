@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BlogPost, BlogCategory } from '../types';
+import { BlogPost, BlogCategory } from '../../types';
 
 export const mockPosts: BlogPost[] = [
   {

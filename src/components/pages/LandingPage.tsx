@@ -1,8 +1,8 @@
 import React from 'react';
-import { URLShortenerForm } from './URLShortenerForm';
-import { PricingSection } from './PricingSection';
-import { BlogPost } from '../types';
-import { View } from '../App';
+import { URLShortenerForm } from '../URLShortenerForm';
+import { PricingSection } from '../PricingSection';
+import { BlogPost } from '../../types';
+import { View } from '../../App';
 
 interface LandingPageProps {
   url: string;
